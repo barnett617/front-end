@@ -6,3 +6,4 @@
 
 1. [数组](1-array/index.md)
 2. [继承](2-inheritance/index.md)
+3. [闭包](3-closure/index.md)
