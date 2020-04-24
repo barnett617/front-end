@@ -1,26 +1,15 @@
-var environment = {
-    intro: "I am the environment",
-    func: () => {
-        // 箭头函数func的this只与声明func所在的环境有关
-        // fucn声明在environment环境（作用域）中，所以func的this永远是environment
-        console.log(this.intro);
-    }
-}
-environment.func();
-var tom = {
-    name: 'Tom',
-    intro: 'I am Tom'
-};
-var jerry = {
-    name: 'Jerry',
-    intro: 'I am Jerry'
-};
-environment.func.call(tom);
-environment.func.apply(tom);
-var tomFunc = environment.func.bind(tom);
-tomFunc();
+var globalObject = this;
+var foo = (() => this);
+console.log(foo() === globalObject); // true
 
-var transFunc = {
-    myFunc: environment.func
-}
-transFunc.myFunc();
+// 接着上面的代码
+// 作为对象的一个方法调用
+var obj = {foo: foo};
+console.log(obj.foo() === globalObject); // true
+
+// 尝试使用call来设定this
+console.log(foo.call(obj) === globalObject); // true
+
+// 尝试使用bind来设定this
+foo = foo.bind(obj);
+console.log(foo() === globalObject); // true
