@@ -9,3 +9,4 @@
 3. [闭包](https://github.com/barnett617/front-end/issues/3) 👉 [示例代码](3-closure/index.md)
 4. [this](https://github.com/barnett617/front-end/issues/4) 👉 [示例代码](4-this/index.md)
 5. [promise](https://github.com/barnett617/front-end/issues/5) 👉 [示例代码](5-promise/index.md)
+5. [常用排序算法](https://github.com/barnett617/front-end/issues/6) 👉 [示例代码](6-sort-algorithm/index.md)
