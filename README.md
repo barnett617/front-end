@@ -11,3 +11,9 @@
 5. [promise](https://github.com/barnett617/front-end/issues/5) 👉 [示例代码](5-promise/index.md)
 6. [常用排序算法](https://github.com/barnett617/front-end/issues/6) 👉 [示例代码](6-sort-algorithm/index.md)
 7. [防抖节流](https://github.com/barnett617/front-end/issues/7) 👉 [示例代码](7-debouce-throttle/index.md)
+
+宏观范围
+
+1. 浏览器
+2. 网络通信
+3. 框架
